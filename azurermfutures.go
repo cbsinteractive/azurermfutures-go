@@ -1,4 +1,4 @@
-package azurermfuturesgo
+package azurermfutures
 
 func NewClient() *Client {
 	return &Client{}

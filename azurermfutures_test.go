@@ -1,4 +1,4 @@
-package azurermfuturesgo
+package azurermfutures
 
 import "testing"
 
