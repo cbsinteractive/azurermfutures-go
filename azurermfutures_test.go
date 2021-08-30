@@ -3,8 +3,8 @@ package azurermfutures
 import "testing"
 
 func TestNewClient(t *testing.T) {
-	c := NewClient()
-	if c == nil {
-		t.Error("NewClient failed to return a value")
+	_, err := New(nil, SetHost(""), SetAuthHost(""))
+	if err != nil {
+		t.Fatal(err)
 	}
 }
