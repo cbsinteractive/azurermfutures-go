@@ -95,7 +95,6 @@ func TestGetJobs(t *testing.T) {
 				server.Client(),
 				azurermfutures.SetHost(u.Host),
 				azurermfutures.SetAuthHost(u.Host),
-				azurermfutures.SetSubscriptionID(d.subscriptionId),
 				azurermfutures.SetTenantID(d.tenantId),
 				azurermfutures.SetClientID(d.clientId),
 				azurermfutures.SetClientSecret(d.clientSecret),

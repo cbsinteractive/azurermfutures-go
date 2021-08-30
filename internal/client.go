@@ -13,10 +13,9 @@ type InternalClient interface {
 type InternalClientImpl struct {
 	// Any copies of InternalClientImpl will share the same HTTP client
 	// and auth objects.
-	Client         *http.Client
-	Auth           *Auth
-	Host           string
-	SubscriptionId string
+	Client *http.Client
+	Auth   *Auth
+	Host   string
 }
 
 func (c InternalClientImpl) Call(path string) (*Response, error) {

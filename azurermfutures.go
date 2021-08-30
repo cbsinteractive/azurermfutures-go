@@ -46,13 +46,6 @@ func SetAuthHost(h string) ClientOpt {
 	}
 }
 
-func SetSubscriptionID(i string) ClientOpt {
-	return func(c *Client) error {
-		c.internalClient.SubscriptionId = i
-		return nil
-	}
-}
-
 func SetTenantID(i string) ClientOpt {
 	return func(c *Client) error {
 		c.internalClient.Auth.TenantId = i
